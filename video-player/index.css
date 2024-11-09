@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+/* Container for the video player */
+.video-player-container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Video styling */
+.video {
+  width: 100%;
+  border-bottom: 2px solid #4a90e2;
+}
+
+/* Controls container */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #222;
+  gap: 15px;
+}
+
+.play-pause-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-pause-btn:hover {
+  background-color: #357abd;
+}
+
+/* Seek bar styling */
+.seek-bar {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #4a90e2;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #357abd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.seek-bar::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background-color: #357abd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Volume slider styling */
+.volume-slider {
+  width: 150px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #4a90e2;
+  outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #357abd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.volume-slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background-color: #357abd;
+  border-radius: 50%;
+  cursor: pointer;
+}
